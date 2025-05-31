@@ -36,4 +36,36 @@ Example:
 
     const item = document.getElementsByTagName("a");
 
-Returned collection is quite specific as it **live** collection - it will get updated if another element of given type is added under element on which selection was called. Manipulation of given collection can be realized same way as it was **array**.
+Returned collection is quite specific as it **live** collection - it will get updated if another element of given type is added under element on which selection was called. Manipulation of given collection can be realized via functions.
+
+## Manipulating values
+
+Selected element is an object of specific type mostly [HTML Element](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) but it also provides all inherited properties and methods.
+
+There are lots of properties which can be read and set.
+
+School: We will check out only few of them.
+
+### innerText
+
+String representation of inner values - just string values.
+
+In leaf nodes it can be used to edit inner value.
+
+### style
+
+Contains all styles (CSS).
+
+It can be used to update styles for given element.
+
+### classList
+
+Collection of CSS classes associated with given element.
+
+It can be used to add or remove classes for given element.
+
+### children
+
+Live collection of child nodes.
+
+For manipulation of this collection functions must be used. But it is possible to add new elements and remove existing.
