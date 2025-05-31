@@ -54,7 +54,11 @@ Windows is specific for current open tab - it is not possible from one to manipu
 
 [Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/location)
 
-TODO
+Location is URL which user and website can manipulate. If URL is changed website may be reloaded.
+
+It is compound of many parts which are used differently and can be manipulated separately.
+
+School: No need to go to detail here, but use [interactive location anatomy](https://developer.mozilla.org/en-US/docs/Web/API/Location#location_anatomy) to check out how it looks.
 
 ### alert
 
