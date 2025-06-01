@@ -1,8 +1,16 @@
 # Domain Object Model
 
-DOM or Domain Object Model is a document - the website which we see. It is tree like structure from nodes which can be manipulated from **Javascript**.
+DOM or Domain Object Model is a document - the website which we see.
 
 Domain Object Model is build from provided `*.html` file before page is rendered to user.
+
+## Structure
+
+DOM is represented as a node tree. The root is website which has two direct children `doctype` and `html` then `html` has children `head` and `body` and so on creating whole website.
+
+All these nodes can be be manipulated from **Javascript**. Not just editing current but also adding and removing them.
+
+Note: Manipulation of DOM is resource intensive and many frameworks either manipulate virtual version and then swap it or batch changes to it.
 
 ## Selecting values
 
