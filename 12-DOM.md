@@ -52,13 +52,13 @@ Selected element is an object of specific type mostly [HTML Element](https://dev
 
 There are lots of properties which can be read and set.
 
-School: We will check out only few of them.
+**School:** We will check out only few of them.
 
 ### innerText
 
 String representation of inner values - just string values.
 
-In leaf nodes it can be used to edit inner value.
+In **leaf nodes** (end nodes) it can be used to edit inner value.
 
 ### style
 
