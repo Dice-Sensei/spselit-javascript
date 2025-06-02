@@ -10,6 +10,8 @@ DOM is represented as a node tree. The root is website which has two direct chil
 
 All these nodes can be be manipulated from **Javascript**. Not just editing current but also adding and removing them.
 
+Script which contains code for manipulating DOM has to be registered on bottom of `<body>` so that elements to manipulate already exists.
+
 Note: Manipulation of DOM is resource intensive and many frameworks either manipulate virtual version and then swap it or batch changes to it.
 
 ## Selecting values
@@ -77,3 +79,25 @@ It can be used to add or remove classes for given element.
 Live collection of child nodes.
 
 For manipulation of this collection functions must be used. But it is possible to add new elements and remove existing.
+
+## Event Listeners
+
+Event listeners is another way how to execute functions in scripts (after script finished executing).
+
+It works on principle that we register actions on elements (**html elements**, **document**, **window**) with function to execute. And when given action is triggered for given element system will automatically execute registered function.
+
+### addEventListener
+
+[Documentation](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+
+Function `addEventListener()` has two required parameters [**event type**](https://developer.mozilla.org/en-US/docs/Web/Events) (string with case sensitive name of event) and `listener` which may be `null`, function or an object containing `handleEvent()` method. Also some optional parameters may be passed in for example information if event can be executed only once.
+
+Example of reacting to button click and hover over paragraph is available in **12_DOM_EventListeners** folder.
+
+### removeEventListener
+
+[Documentation](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener)
+
+Function `removeEventListener()` is for removing event listeners registered via `addEventListener()`. It is required to call it on same element and with same parameters.
+
+Note: It is good practice to remove listeners which you have added when, but they will get removed automatically when elements is destroyed (in modern browsers).
