@@ -122,6 +122,10 @@ Javascript has few data types which are used regularly: `string`, `number`, `boo
 
 And other ones which are not: `Bigint`, `Symbol`.
 
+These data types are not explicitly declared, they are used under the hood to determine how to categorize and store data.
+
+Note: Programmer should always know of which type are data in used variable.
+
 ### string
 
 This is just a normal text of variable length and can be written either by using `''` (single quotes) looking like `'Hey it is me ...'` or by using `""` (double quotes) looking like `"Hey it is me ..."`.
